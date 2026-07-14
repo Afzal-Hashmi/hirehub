@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Hi {{ candidate_name }},</p>
+<p>Great news! We'd love to move forward with your application for <strong>{{ job_title }}</strong> at <strong>{{ company_name }}</strong>.</p>
+<p>We've scheduled an interview for you:</p>
+<div style="background:#f3f4f6;border-radius:8px;padding:16px;margin:16px 0;">
+  <p style="margin:0 0 8px;"><strong>Date & Time:</strong> {{ interview_time }}</p>
+  <p style="margin:0 0 8px;"><strong>Duration:</strong> {{ duration_minutes }} minutes</p>
+  <p style="margin:0;"><strong>Interviewer:</strong> {{ interviewer_name }}</p>
+</div>
+{% if interview_link %}
+<p style="text-align:center;">
+  <a href="{{ interview_link }}" class="cta">Join Interview</a>
+</p>
+{% endif %}
+<p>Please reply to this email if you need to reschedule.</p>
+<p>We look forward to speaking with you!</p>
+<p>Best,<br>The {{ company_name }} Team</p>
+{% endblock %}

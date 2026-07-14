@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Hi there,</p>
+<p><strong>{{ invited_by_name }}</strong> has invited you to join <strong>{{ org_name }}</strong> on HireHub.</p>
+<p>HireHub is an AI-powered hiring platform for managing job postings, candidates, and interviews.</p>
+<p style="text-align:center;">
+  <a href="{{ invite_url }}" class="cta">Accept Invitation</a>
+</p>
+<p style="color:#9ca3af;font-size:13px;">This invitation expires in 7 days. If you didn't expect this, you can safely ignore it.</p>
+{% endblock %}

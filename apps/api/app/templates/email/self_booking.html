@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Hi {{ candidate_name }},</p>
+<p>Exciting news — <strong>{{ company_name }}</strong> would like to schedule an interview with you for the <strong>{{ job_title }}</strong> position.</p>
+<p>Please use the link below to pick a time that works best for you:</p>
+<p style="text-align:center;">
+  <a href="{{ booking_url }}" class="cta">Schedule My Interview</a>
+</p>
+<p>This link will expire soon, so please book at your earliest convenience.</p>
+<p>We look forward to speaking with you!</p>
+<p>Best,<br>The {{ company_name }} Team</p>
+{% endblock %}

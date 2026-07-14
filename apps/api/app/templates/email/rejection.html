@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Hi {{ candidate_name }},</p>
+<p>Thank you for taking the time to apply for <strong>{{ job_title }}</strong> at <strong>{{ company_name }}</strong> and for your interest in joining our team.</p>
+{% if custom_body %}
+<p>{{ custom_body }}</p>
+{% else %}
+<p>After careful consideration, we've decided to move forward with other candidates whose experience more closely matches our current needs. This was a difficult decision given the strong pool of applicants.</p>
+<p>We genuinely appreciate the time and effort you put into your application, and we encourage you to apply for future openings that match your skills and interests.</p>
+{% endif %}
+<p>We wish you all the best in your job search.</p>
+<p>Warm regards,<br>The {{ company_name }} Team</p>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Hi {{ candidate_name }},</p>
+<p>Thank you for applying for <strong>{{ job_title }}</strong> at <strong>{{ company_name }}</strong>!</p>
+<p>We've received your application and our team will review it carefully. We'll be in touch soon with an update.</p>
+<p>In the meantime, feel free to reach out if you have any questions.</p>
+<p>Best of luck,<br>The {{ company_name }} Hiring Team</p>
+{% endblock %}
